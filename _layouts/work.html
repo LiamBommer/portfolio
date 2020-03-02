@@ -1,0 +1,60 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row">
+        <div class="col text-left">
+            <a href="{% link index.html %}">
+                <h5>Pengkai Liao</h5>
+            </a>
+        </div>
+
+        <div class="col text-right">
+            <h6>
+                <a href="{% link about.html %}">About</a>
+                &nbsp;&nbsp;
+                <a href="{% link about.html %}" target="_blank">Resume</a>
+            </h6>
+        </div>
+    </div>
+</div>
+
+<div class="divide"></div>
+
+<article>
+
+    <header>
+        <img src="{{ page.cover }}" class="img-fluid" alt="Responsive image" />
+
+        <div class="divide"></div>
+
+        <div class="row">
+            <div class="col-md-8 col-sm-12">
+                <h1>{{ page.title | escape }}</h1>
+                <p>{{ page.desc | escape }}</p>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <strong>Method</strong>
+                <p> {{ page.method }}</p>
+                <strong>Tools</strong>
+                <p> {{ page.tools }}</p>
+                <strong>Duration</strong>
+                <p> {{ page.duration }}</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="divide"></div>
+    <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6">
+            <hr>
+        </div>
+    </div>
+    <div class="divide"></div>
+
+    <section>
+        {{ content }}
+    </section>
+
+</article>

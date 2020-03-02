@@ -3,8 +3,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <!-- custom css import -->
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <!-- page specific css import -->
+  {% if page.css %}
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/{{ page.css }}.css">
+  {% endif %}
   {%- feed_meta -%}
   <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
   <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+  <!-- font awesome import -->
+  <script src="https://kit.fontawesome.com/cbcb90c343.js" crossorigin="anonymous"></script>
+  <!-- custom js import -->
+  <script src="{{ "/assets/js/main.js" | relative_url }}" crossorigin="anonymous"></script>
+  <!-- page specific js import -->
+  {% if page.css %}
+    <script src="/assets/js/{{ page.css }}.js" crossorigin="anonymous"></script>
+  {% endif%}
 </head>

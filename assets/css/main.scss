@@ -1,0 +1,77 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "variables";
+@import "bootstrap/bootstrap";
+@import "syntax-highlighting";
+@import "bootstrap-4-jekyll/bootstrap-4-jekyll";
+@import "bootstrap_customization";
+
+/* *******************
+/* Global variables
+/* ******************/
+$main-color:    #78c2ad;
+
+
+// Adapt page width
+@media (min-width: 576px) { .container {max-width: 540px;} }
+@media (min-width: 768px) { .container {max-width: 720px;} }
+@media (min-width: 996px) { .container {max-width: 960px;} }
+@media (min-width: 1200px) { .container {max-width: 1080px;} }
+
+// Color of 'a' tag
+
+/* *******************
+/* Index.html
+/* ******************/
+.space {
+    height: 100px;
+}
+.divide {
+    height: 32px;
+}
+.divide-sm {
+    height: 16px;
+}
+
+
+// icon
+a {
+    color: #888;
+    text-decoration: underline;
+    transition: color .2s;
+}
+
+a:hover {
+    color: $main-color;
+    text-decoration: underline;
+}
+
+a.icon {
+    font-size: 28px;
+    padding-right: 16px;
+}
+
+a.icon.github:hover {
+    color: #333;
+}
+
+a.icon.linkedin:hover {
+    color: #2867B2;
+}
+
+.col {
+    margin-bottom: 16px;
+}
+
+
+// Card shadow effect
+.card {
+    transition: box-shadow .2s;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .15);
+}
+
+.card:hover {
+    box-shadow: 0 8px 15px 3px rgba(0, 0, 0, .17);
+}
