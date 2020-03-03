@@ -4,8 +4,222 @@ css: jiaoxiang
 permalink: /work/jiaoxiang
 title: Jiao Xiang
 cover: /assets/image/jx_cover.png
-desc: A socialized and gamified mobile reading app
+desc: Jiao Xiang (Co-Think) is a socialized and gamified mobile reading app that applies PWA (Progressive Web Application) framework and can be added to home screen as a native app.
 method: User Interview, Prototyping, Front-end Programming
-tools: Persona, Balsamiq, Javascript, PWA (Progressive Web Application)
+tools: Balsamiq, Javascript, PWA (Progressive Web Application)
 duration: 2019.2 - 2019.5
+team: Individual project
 ---
+
+<h2>What is Jiao Xiang</h2>
+<p>
+    Jiao Xiang ('交想') means 'Co-Think', it is a moblie app that enable us to read papers and share ideas with other readers in a similar way with Medium. 
+    It combines <strong>socialized and gamified elements</strong> into traditional reading experiences. 
+</p>
+<p>
+    Nowadays, people spend hours on swiping contents on their phones everyday. The reading experience is 
+    shallow and fragmented. Applications like Forest and Medium have proven that involving socialized and 
+    gamified elements can raise people's interest in the app. Jiao Xiang was designed to utilize those elements 
+    to improve mobile reading experience.
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>User Interview</h2>
+<p>
+    Young adults are majority population who consume entertainment and spend the most time on smartphones. 
+    I interviewed 8 college students at a south China university to investigate the following usage of smartphones 
+    and learned that:
+</p>
+
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h4><strong>1. At what timing people would browse their phones?</strong></h4>
+                </div>
+                <div class="card-text">
+                    <p>
+                        Mostly in a relatively short period of time (&lt;20mins) such as during classes, 
+                        waiting in lines, having a meal, and before bed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h4><strong>2. What type of content would they usually browse?</strong></h4>
+                </div>
+                <div class="card-text">
+                    <p>
+                        <ul>
+                            <li>Entertaining information such as short videos and gossips</li>
+                            <li>Short articles for knowledge on various platforms</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <div class="card-title">
+                    <h4><strong>3. What drives them to browse the phone?</strong></h4>
+                </div>
+                <div class="card-text">
+                    <ol>
+                        <li>When distracted or bored from the things they are doing</li>
+                        <li>Complete repeated activitites such as daily tasks in games</li>
+                        <li>Got stimulated by competitive or intriguing content</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>Competitive Analysis</h2>
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <p>
+            Medium is a popular reading and writing platform on the Internet. 
+            Social elements play an important role in this community.
+        </p>
+        <p>
+            Users can highlight, comment, and share certain sentences in an article (see figure on the right). 
+            You will read the highlights and comments from your following in the same article. In the profile page, 
+            users can see the article they read and comments they made.
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/Medium-2.png" class="card-img-top" alt="medium screenshot">
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <p>
+            WeChat Reading is one of the most popular reading app in the Chinese market. 
+            Users have access with various books and novels in the app.
+        </p>
+        <p>
+            Similar to Medium, WeChat Reading allow users to highlight and comments sentences in the book which can be see by other users. 
+            Beside that, WeChat Reading calculates the total time users spend on reading every week and generate friends rank (see figure on the right) based on your friends list in WeChat.
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/wechat-reading.png" class="card-img-top" alt="WeChat Reading">
+    </div>
+</div>
+
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<!-- interaction line -->
+<h2>Prototyping with Balsamiq</h2>
+<div class="divide"></div>
+<img src="/assets/image/jiaoxiang/Mockup.png" class="img-fluid" alt="mockup" />
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>Key Functions</h2>
+<div class="divide"></div>
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <h3>Shared Highlight</h3>
+        <p>
+            In an article, sentences marked by other users appear teal. Users can highlight with a click of the sentence. 
+            Then the sentence turned blue and relative actions popup such as comments and undo.
+        </p>
+        <p>
+            After important parts being highlighted by other users, the article becomes easier to read. 
+            This function actively connects users when reading.
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/highlight.png" class="card-img-top" alt="Highlight">
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <h3>Thoughts</h3>
+        <p>
+            Users can comment on the highlighted sentences and share their ideas about it. 
+        </p>
+        <p>
+            Thoughts from other users may provide more context and information for the article.
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/thoughts.png" class="card-img-top" alt="thoughts">
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <h3>Interest Radar</h3>
+        <p>
+            Articles are categorized into different interest such as science, technology, art, etc. 
+            Highlighting and commenting on articles from different categories accumulates the points in this interest.
+        </p>
+        <p>
+            By reading articles from different categories, users' interest and characteristics will be 
+            reflected by the interest radar chart.
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/Radar.png" class="card-img-top" alt="radar">
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <h3>Reading History</h3>
+        <p>
+            The highlights and comments made by the user will be shown in his profile page. 
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/Radar.png" class="card-img-top" alt="radar">
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>Technical Realization</h2>
+<p>
+    This project applies PWA (Progressive Web Application) framework by using 
+    <a href="https://github.com/lavas-project/lavas" target="_blank">Lavas</a>, a PWA solution 
+    based on <a href="https://vuejs.org/index.html" target="_blank">Vue.js</a>. 
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+

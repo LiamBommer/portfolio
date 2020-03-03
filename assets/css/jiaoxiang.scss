@@ -1,0 +1,22 @@
+---
+---
+
+/* *******************
+/* Global variables
+/* ******************/
+$main-color: #78c2ad;
+
+
+// Remove card shadow
+.card {
+    border: none;
+    box-shadow: none;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card h4 {
+    color: $main-color;
+}
