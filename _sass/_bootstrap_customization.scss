@@ -7,8 +7,12 @@
 
 // Variables ===================================================================
 
+// Original Font
 $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
 @import url($web-font-path);
+// Customized Font
+@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+// $font-family-sans-serif: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 
 // Navbar ======================================================================
 

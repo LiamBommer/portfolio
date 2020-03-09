@@ -22,6 +22,5 @@ $(document).ready(function() {
     });
 
     // Change cursor to pointer
-    $("div.card").css("cursor", "pointer");
 
 })
