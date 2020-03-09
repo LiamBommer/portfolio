@@ -2,25 +2,19 @@
 layout: default
 ---
 
-<div class="container">
-    <div class="row">
-        <div class="col text-left">
-            <a href="{% link index.html %}">
-                <h5>Pengkai Liao</h5>
-            </a>
+<nav class="navbar">
+    <div class="nav-item">
+        <a class="nav-link nav-brand" href="{% link index.html %}">Pengkai Liao</a>
+    </div>
+    <div class="nav-item row">
+        <div class="col">
+            <a class="nav-link" href="{% link about.html %}">About</a>
         </div>
-
-        <div class="col text-right">
-            <h6>
-                <a href="{% link about.html %}">About</a>
-                &nbsp;&nbsp;
-                <a href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
-            </h6>
+        <div class="col">
+            <a class="nav-link" href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
         </div>
     </div>
-</div>
-
-<div class="divide"></div>
+</nav>
 
 <article>
 

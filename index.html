@@ -1,6 +1,5 @@
 ---
 layout: default
-data: 1
 ---
 
 <div class="space"></div>
@@ -24,22 +23,14 @@ data: 1
                 <a class="icon linkedin" href="https://www.linkedin.com/in/%E9%B9%8F%E5%87%AF-%E5%BB%96-650857158/" target="_blank"><i class="fab fa-linkedin-in" ></i></a>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <!-- link -->
-                <h6>
-                    <a href="{% link about.html %}">About</a>
-                </h6>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <!-- link -->
-                <h6>
-                    <a href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
-                </h6>
-            </div>
-        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="{% link about.html %}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
+            </li>
+        </ul>
     </div>
 </div>
 
