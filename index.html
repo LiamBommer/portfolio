@@ -2,7 +2,20 @@
 layout: default
 ---
 
-<div class="space"></div>
+<nav class="navbar navbar-expand">
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+            <span><a class="nav-link" href="{% link zh.html %}">中</a></span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">/</span>
+        </li>
+        <li class="nav-item">
+            <span class="nav-link">Eng</span>
+        </li>
+    </ul>
+</nav>
+
 <div class="space"></div>
 
 <!-- About -->
@@ -30,9 +43,6 @@ layout: default
             <li class="nav-item">
                 <a class="nav-link" href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% link /assets/PengkaiLiao_Resume_zh.pdf %}" target="_blank">简历</a>
-            </li>
         </ul>
     </div>
 </div>
@@ -43,7 +53,7 @@ layout: default
 <!-- Work -->
 <div class="row ml-4 mr-4">
 
-    <div class="col-6">
+    <div class="col-md-6 col-sm-12">
         <!--  RIT Parking -->
         <div class="card border-0 rounded zoom" id="ritparking">
             <img src="/assets/image/rp_cover.png" class="card-img-top" alt="RIT ParkingCover">
@@ -55,24 +65,7 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="col-6">
-        <!-- Snapchat -->
-        <div class="card border-0 rounded" id="snapchat">
-            <img src="/assets/image/sc_cover.png" class="card-img-top" alt="Snapchat Cover">
-            <div class="card-body">
-                <h4 class="card-title">User Research on Snapchat</h4>
-                <p class="card-text">Qualitative and quantitative research on Snapchat</p>
-                <span class="badge badge-info">User Research</span>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="divide"></div>
-<div class="divide"></div>
-
-<div class="row ml-4 mr-4">
-    <div class="col-6">
+    <div class="col-md-6 col-sm-12">
         <!-- Jiao Xiang -->
         <div class="card border-0 rounded" id="jiaoxiang">
             <img src="/assets/image/jx_cover.png" class="card-img-top" alt="Jiao Xiang Cover">
@@ -85,25 +78,24 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="col-6">
-        <!--  UR Design -->
-        <div class="card border-0 rounded" id="urdesign">
-            <img src="/assets/image/ur_cover.png" class="card-img-top" alt="UR Design Cover">
-            <div class="card-body">
-                <h4 class="card-title">UR Interior Deisgn</h4>
-                <p class="card-text">A customized website for an interior design studio</p>
-                <span class="badge badge-primary">UX Design</span>
-                <span class="badge badge-light">Front-end Programming</span>
-            </div>
-        </div>
-    </div>
 </div>
 
 <div class="divide"></div>
 <div class="divide"></div>
 
 <div class="row ml-4 mr-4">
-    <div class="col-6">
+    <div class="col-md-6 col-sm-12">
+        <!-- Snapchat -->
+        <div class="card border-0 rounded" id="snapchat">
+            <img src="/assets/image/sc_cover.png" class="card-img-top" alt="Snapchat Cover">
+            <div class="card-body">
+                <h4 class="card-title">User Research on Snapchat</h4>
+                <p class="card-text">Qualitative and quantitative research on Snapchat</p>
+                <span class="badge badge-info">User Research</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
         <!-- One Cooperation -->
         <div class="card border-0 rounded" id="onecooperation">
             <img src="/assets/image/co_cover.png" class="card-img-top" alt="One Cooperation Cover">
@@ -116,7 +108,25 @@ layout: default
             </div>
         </div>
     </div>
-    <div class="col-6">
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row ml-4 mr-4">
+    <div class="col-md-6 col-sm-12">
+        <!--  UR Design -->
+        <div class="card border-0 rounded" id="urdesign">
+            <img src="/assets/image/ur_cover.png" class="card-img-top" alt="UR Design Cover">
+            <div class="card-body">
+                <h4 class="card-title">UR Interior Deisgn</h4>
+                <p class="card-text">A customized website for an interior design studio</p>
+                <span class="badge badge-primary">UX Design</span>
+                <span class="badge badge-light">Front-end Programming</span>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6 col-sm-12">
         <!-- BuzzwordReader -->
         <div class="card border-0 rounded" id="buzzwordreader">
             <img src="/assets/image/br_cover.png" class="card-img-top" alt="BuzzwordReader Cover">

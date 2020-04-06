@@ -21,6 +21,9 @@ $(document).ready(function() {
         window.location.href = "work/snapchat";
     });
 
-    // Change cursor to pointer
+    // Chinese Project card link
+    $('#ritparking_zh').on("click", function() {
+        window.location.href = "work/ritparking_zh";
+    });
 
 })

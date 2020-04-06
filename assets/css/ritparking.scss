@@ -1,0 +1,32 @@
+---
+---
+
+/* *******************
+/* Global variables
+/* ******************/
+// $primary: #FF9E40;
+// $primary: #78C2AD;
+$primary: #F18434;
+
+// Remove card shadow
+.card {
+    border: none;
+    box-shadow: none;
+}
+
+.card:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+.card h5 {
+    color: $primary;
+}
+
+.carousel-control-prev-icon.dark {
+    filter: invert(100%);
+}
+
+.carousel-control-next-icon.dark {
+    filter: invert(100%);
+}

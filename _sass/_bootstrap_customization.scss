@@ -11,7 +11,10 @@
 $web-font-path: "https://fonts.googleapis.com/css?family=Montserrat" !default;
 @import url($web-font-path);
 // Customized Font
-@import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+// muli
+// @import url("https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+// open sans
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
 
 // Navbar ======================================================================
 
