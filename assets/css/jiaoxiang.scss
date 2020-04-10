@@ -4,8 +4,11 @@
 /* *******************
 /* Global variables
 /* ******************/
-$main-color: #78c2ad;
+$main-color: #45BBF6;
 
+.progress-bar {
+    background-color: $main-color;
+}
 
 // Remove card shadow
 .card {
