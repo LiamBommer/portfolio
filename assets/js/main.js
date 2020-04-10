@@ -14,17 +14,20 @@ function progressBar() {
         oImg.onload = function(){//使用onload方法，在加载完成后执行
             oImg.onload = null;//首先清除掉缓存
             img_num++;//每次加载的过程中num++，即执行次数
-            var con_b = parseInt(img_num / ($("img").length) * 100)+"%";
+            var con_b = parseInt(img_num / (imgs.length) * 100)+"%";
             console.log(con_b);
             $('.progress-bar').css({'width': con_b});
+
+            if (img_num == imgs.length) {
+                // 全部加载完成后一秒隐藏进度条
+                setInterval(function() {
+                    $(".progress-bar").fadeOut();
+                }, 1500)
+            }
         }
         // ?
         oImg.src = imgs[i].src;//预加载，先指定一个img.src，当onload成功以后可以将数据指定到某一个元素或者图片上，或者返回一个结果
     });
-
-    setInterval(function() {
-        $(".progress-bar").fadeOut();
-    }, 1000)
 
 
 }
