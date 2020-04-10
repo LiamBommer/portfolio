@@ -8,6 +8,11 @@
 // $primary: #78C2AD;
 $primary: #F18434;
 
+// Progress bar
+.progress-bar {
+    background-color: $primary;
+}
+
 // Remove card shadow
 .card {
     border: none;
