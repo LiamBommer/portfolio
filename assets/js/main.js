@@ -15,12 +15,12 @@ function progressBar() {
             oImg.onload = null;//首先清除掉缓存
             img_num++;//每次加载的过程中num++，即执行次数
             var con_b = parseInt(img_num / (imgs.length) * 100)+"%";
-            console.log(con_b);
+            // console.log(con_b);
             $('.progress-bar').css({'width': con_b});
 
             if (img_num == imgs.length) {
                 // 全部加载完成后一秒隐藏进度条
-                setInterval(function() {
+                setTimeout(function() {
                     $(".progress-bar").fadeOut();
                 }, 1500)
             }
@@ -32,10 +32,49 @@ function progressBar() {
 
 }
 
+/*
+    首页打字效果js
+
+    References
+        https://github.com/mattboldt/typed.js/
+*/
+function typing() {
+
+    var options_1 = {
+        strings: ['我是一个从用户出发，致力于创造优秀使用体验的交互设计师<br/>我还是一个'],
+        typeSpeed: 25,
+        smartBackspace: false,
+        showCursor: false
+    };
+    var typed_1 = new Typed('.typed_1', options_1);
+
+    // 等待两秒上面的输入完成后继续
+    setTimeout(function() {
+        var options_2 = {
+            strings: ['前端开发', '游戏爱好者', '吉他手', '摄影爱好者'],
+            typeSpeed: 80,
+            backSpeed: 20,
+            backDelay: 1200,
+            loop: true,
+            loopCount: Infinity,
+        };
+        var typed_2 = new Typed('.typed_2', options_2);
+    }, 2000)
+
+
+};
+
 $(document).ready(function() {
 
     // Run progress bar
     progressBar();
+
+    // Initial typing effect
+    typing();
+
+    $('.typed_2').on('click', function() {
+        window.location.href = "about";
+    }).css('cursor', 'pointer');
 
     // Project card link to page
     $("#onecooperation").on("click", function() {
