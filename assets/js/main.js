@@ -32,37 +32,43 @@ function progressBar() {
 
 }
 
+
 /*
-    首页打字效果js
+    中文首页打字效果js
 
     References
         https://github.com/mattboldt/typed.js/
 */
 function typing() {
 
-    var options_1 = {
-        strings: ['我是一个从用户出发，致力于创造优秀使用体验的交互设计师<br/>我还是一个'],
-        typeSpeed: 25,
-        smartBackspace: false,
-        showCursor: false
-    };
-    var typed_1 = new Typed('.typed_1', options_1);
+    // 判断是否中文
+    if($('.typed_1').length > 0) {
 
-    // 等待两秒上面的输入完成后继续
-    setTimeout(function() {
-        var options_2 = {
-            strings: ['前端开发', '游戏爱好者', '吉他手', '摄影爱好者'],
-            typeSpeed: 80,
-            backSpeed: 20,
-            backDelay: 1200,
-            loop: true,
-            loopCount: Infinity,
+        var options_1 = {
+            strings: ['我是一个从用户出发，致力于创造优秀使用体验的交互设计师<br/>我还是一个'],
+            typeSpeed: 25,
+            smartBackspace: false,
+            showCursor: false
         };
-        var typed_2 = new Typed('.typed_2', options_2);
-    }, 2000)
+        var typed_1 = new Typed('.typed_1', options_1);
 
+        // 等待两秒上面的输入完成后继续
+        setTimeout(function() {
+            var options_2 = {
+                strings: ['前端开发', '游戏爱好者', '吉他手', '摄影爱好者'],
+                typeSpeed: 80,
+                backSpeed: 20,
+                backDelay: 1000,
+                loop: true,
+                loopCount: Infinity,
+            };
+            var typed_2 = new Typed('.typed_2', options_2);
+        }, 1500)
+
+    }
 
 };
+
 
 $(document).ready(function() {
 
@@ -72,9 +78,10 @@ $(document).ready(function() {
     // Initial typing effect
     typing();
 
-    $('.typed_2').on('click', function() {
-        window.location.href = "about";
-    }).css('cursor', 'pointer');
+
+    // $('.typed_2').on('click', function() {
+    //     window.location.href = "about";
+    // }).css('cursor', 'pointer');
 
     // Project card link to page
     $("#onecooperation").on("click", function() {
@@ -99,6 +106,12 @@ $(document).ready(function() {
     // Chinese Project card link
     $('#ritparking_zh').on("click", function() {
         window.location.href = "work/ritparking_zh";
+    });
+    $('#jiaoxiang_zh').on("click", function() {
+        window.location.href = "work/jiaoxiang_zh";
+    });
+    $("#onecooperation_zh").on("click", function() {
+        window.location.href = "work/onecooperation_zh";
     });
 
 });

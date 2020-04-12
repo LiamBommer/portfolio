@@ -39,10 +39,20 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
 }
 
+body {
+    line-height: 1.85rem;
+}
+
+// Introduction font
 .introduction {
     font-size: 1.25rem;
     line-height: 2.25rem; 
 }
+
+
+// Progress bar
+// .progress {
+// }
 
 
 // icon
@@ -120,3 +130,22 @@ img.avatar {
 .bg-grey {
     background-color: $bg-grey;
 }
+
+
+// Work fixed cover
+.fixed-cover {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-size: 100%;
+    // background-attachment: fixed;
+    // transform-style: preserve-3d;
+    // overflow-y: hidden;
+    // perspective: 1px;
+}
+// .fixed-cover-img {
+//     width: 100%;
+//     transform: translateZ(-2px) scale(3);
+// }
