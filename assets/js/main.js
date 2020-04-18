@@ -21,7 +21,7 @@ function progressBar() {
             if (img_num == imgs.length) {
                 // 全部加载完成后一秒隐藏进度条
                 setTimeout(function() {
-                    $(".progress-bar").fadeOut();
+                    $(".progress").fadeOut();
                 }, 1500)
             }
         }

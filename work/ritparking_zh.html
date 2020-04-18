@@ -10,13 +10,19 @@ tools: Figma, Balsamiq, Miro
 duration: 2019.9 - 2019.12
 team: Xuan Zhao, Pengkai Liao, Yiwen Wang, Manisha Kamarushi
 ---
-
+<div class="divide"></div>
+<div class="divide"></div>
 
 <h2>在RIT中的停车难</h2>
+<div class="divide"></div>
 <p>
     在RIT中，有一大部分学生和教授都选择开车来校园，在平日上下课期间想找到离教学楼近的停车位不是一件容易的事。
-    我和我的同学们都体验过在上课时花<strong>起码五到十分钟寻找停车位</strong>的经历。停车位难找想必不是大家在停车场遇到的唯一问题，
-    所以我们进行了情景访谈来了解大家在RIT停车场遇到的问题。
+    我和我的同学们都体验过在上课时花<strong>起码五到十分钟寻找停车位</strong>的经历。
+    停车位难找也不是大家在停车场遇到的唯一问题，
+    通过情景访谈，我们了解到大家在RIT停车时遇到的各种问题。
+</p>
+<p>
+    其中最主要的两个问题，是找停车位以及找到自己车的位置：
 </p>
 
 <div class="divide"></div>
@@ -24,8 +30,103 @@ team: Xuan Zhao, Pengkai Liao, Yiwen Wang, Manisha Kamarushi
 <div class="divide"></div>
 <div class="divide"></div>
 
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <video class="embed-responsive" autoplay loop muted>
+            <source src="/assets/image/ritparking/video_spots.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos
+        </video>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+        <h2>寻找车位</h2>
+        <div class="divide"></div>
+        <p>
+            用户可以直接在地图上看到各个停车场剩余的停车位，也可通过底部列表查看。
+            这样为用户提供快速便捷的信息浏览，可自行判断选择停车场。
+        </p>
+        <p>
+            选择某个停车场后可以查看实时车位状况，便于用户到停车场后进行车位查找。
+            若需要导航，点击任一空位后可通过第三方软件进行导航。
+        </p>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+        <h2>停车地点记录</h2>
+        <div class="divide"></div>
+        <p>
+            有许多时常记不住自己停车位的用户，夜晚或大雪等环境影响也会让找车变得困难。
+            在用户到达校园后，可选择手动记录停车地点。
+        </p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <video class="embed-responsive" autoplay loop muted>
+            <source src="/assets/image/ritparking/video_save_location.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos
+        </video>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <video class="embed-responsive" autoplay loop muted>
+            <source src="/assets/image/ritparking/video_find_car.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos
+        </video>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-5">
+        <h2>寻找停车地点</h2>
+        <div class="divide"></div>
+        <p>
+            记录好停车地点后，用户可通过第三方导航寻找车辆。
+        </p>
+    </div>
+    <div class="col-1"></div>
+</div>
+
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+
 <h6>Contextual Interviews</h6>
 <h2>情景访谈</h2>
+<div class="divide"></div>
 <p>
     首先，我们对一个经常开车来学校的队友进行试验式访谈，找出她所遇到的问题并以此构成我们半开放式访谈的问题基础。
     我们去到学校停车场观察人们如何停车，并且找到2个人在停车场针对他们遇到关于停车的问题进行访谈。其余7个拥有驾车去学校经验的人在校园内进行访谈。
@@ -272,6 +373,16 @@ team: Xuan Zhao, Pengkai Liao, Yiwen Wang, Manisha Kamarushi
     为让页面更加符合地图的心理预期，添加用户当前位置标志和导航按钮，明确显示操作。
 </p>
 <img src="/assets/image/ritparking/Iteration - Spots.png" class="img-fluid" alt="iteration spots" />
+<div class="divide"></div>
+<div class="divide"></div>
+<p>
+    再次改版后，统一了视觉风格。同时鉴于大多数用户对于学校的熟悉程度，对页面交互进行了优化：
+    <ul>
+        <li>突出查看停车场空位的操作，将查找停车地点与设置两个tab变为两个按钮</li>
+        <li>大部分用户已熟记去学校的路线，不需要进行搜索，所以将搜索功能缩小为按钮，在页面上展示更多信息</li>
+    </ul>
+</p>
+<img src="/assets/image/ritparking/Iteration - Spots - 2.png" class="img-fluid" alt="iteration spots" />
 
 <div class="divide"></div>
 <div class="divide"></div>
@@ -284,6 +395,18 @@ team: Xuan Zhao, Pengkai Liao, Yiwen Wang, Manisha Kamarushi
     所以改版采用按钮来引导用户关闭窗口。
 </p>
 <img src="/assets/image/ritparking/Iteration - Bar.png" class="img-fluid" alt="iteration icon" />
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h6>用户测试与设计迭代 03</h6>
+<h3>停车场信息</h3>
+<div class="divide"></div>
+<p>
+    提供了更丰富的停车位信息，不符合用户所持停车证的车位以灰色显示。用户可自主选择是否需要按车位进行导航。
+</p>
+<img src="/assets/image/ritparking/Iteration - Lot Detail.png" class="img-fluid" alt="iteration icon" />
+
 
 <div class="divide"></div>
 <div class="divide"></div>
