@@ -106,7 +106,11 @@ a.icon.linkedin:hover {
 
 .card:hover {
     box-shadow: 0 8px 15px 3px rgba(0, 0, 0, .17);
-    transform: scale(1.01);
+    // transform: scale(1.01);
+}
+.card:active {
+    box-shadow: 0 1px 10px 3px rgba(0, 0, 0, .13);
+    transform: scale(0.99);
 }
 
 // about avatar
