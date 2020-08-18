@@ -45,7 +45,7 @@ function typing() {
     if($('.typed_1').length > 0) {
 
         var options_1 = {
-            strings: ['我是一个从用户出发，致力于创造优秀使用体验的交互设计师<br/>我还是一个'],
+            strings: ['是一个从用户出发，致力于创造优秀使用体验的交互设计师<br/>我还是一个'],
             typeSpeed: 25,
             smartBackspace: false,
             showCursor: false
@@ -112,6 +112,9 @@ $(document).ready(function() {
     });
     $("#onecooperation_zh").on("click", function() {
         window.location.href = "work/onecooperation_zh";
+    });
+    $("#smokepuppy_zh").on("click", function() {
+        window.location.href = "work/smokepuppy_zh";
     });
 
 });

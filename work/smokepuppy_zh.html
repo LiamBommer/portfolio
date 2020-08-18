@@ -1,0 +1,260 @@
+---
+layout: work
+css: smokepuppy
+permalink: /work/smokepuppy_zh
+title: Smoke Puppy
+cover: /assets/image/jx_cover.png
+desc: 一个能够展示实时烟雾含量的可交互原型
+method: Prototyping, User Study
+tools: Figma, ProtoPie
+duration: 2020.3 - 2020.4
+team: Chirag, Pengkai, Wentao, Madhura
+---
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>经常被触发的烟雾报警器</h2>
+<div class="divide"></div>
+<p>
+    在美国，几乎每个房子内都装有烟雾报警器。若不小心触发烟雾报警器，除却报警器的响亮的报警声，还则很有可能导致消防车发动甚至整栋建筑的人都需撤离。
+    特别是对于下厨时会产生许多油烟的中式菜来说，更是要时常担心做饭时触发烟雾报警器。在我们一名组员的家中，甚至几乎每天都会因为过量的油烟触发烟雾报警器。
+</p>
+<p>
+    受启发于这种担心触发烟雾报警的困扰，我们尝试探索实时监控厨房中烟雾含量的方法，这样就能让经常做饭的人在在烟雾含量达到临界前采取如开窗通风、关小煤气灶等措施，
+    以最大程度避免触发报警器。
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>实时监控烟雾含量</h2>
+<div class="divide"></div>
+<p>
+    我们通过一个手机端的可交互原型来让用户能够在下厨时也能实时看到当前烟雾含量，并在烟雾含量过高时提供震动或声音提醒。我们邀请了3名用户进行测试，在使用Smoke Puppy实时监控烟雾含量的情况下他们均为触发烟雾报警器，并给出了正面的反馈。
+</p>
+<p>
+    图
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>原型设计</h2>
+<p>
+    高保真交互逻辑
+</p>
+<p>
+    作为一个实时监控烟雾含量的工具，我们打算给用户呈现一个简单易用且能够快速理解的界面，所以尽量把信息与操作在一屏内展示。也同时尝试了新拟物的视觉风格，让工具看起来更加真实。
+</p>
+<p>
+    
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>系统设置</h2>
+<p>
+    我们采用了一个搭载了烟雾探测器的Raspbery Pi作为探测烟雾含量的硬件，通过与Raspberry Pi与电脑的连接实现实时烟雾含量探测。
+    再通过Figma和ProtoPie制作手机上的可交互原型将实时烟雾含量展示给用户。
+</p>
+<p>
+    硬件图（Test Plan）、整体系统示意图、服务端与展示端
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+
+<h2>用户测试</h2>
+<p>
+    预测试、用户招募、流程、反馈
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>功能展望</h2>
+
+不足
+1. 时间不够，没能实现时间预测功能
+2. 用户测试，A/B测试
+
+展望
+1. 可以和体感设备连接，如手表
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>用户访谈</h2>
+<div class="divide"></div>
+<p>
+    年轻人是使用手机浏览信息与消费娱乐的主要群体，我对8个在校大学生进行了用户访谈来了解他们平时使用手机的习惯以及使用手机阅读的习惯：
+</p>
+<div class="divide"></div>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+            <img src="/assets/image/jiaoxiang/time@2x.png" class="card-img-top" alt="vacant spots" />
+            <div class="card-body">
+                <div class="card-title">
+                    <h4 class="text-center">使用时间碎片化</h4>
+                </div>
+                <div class="card-text">
+                    <p>
+                        大多数使用手机的时间都在20分钟以内，例如课间、排队、吃饭和睡前等
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <img src="/assets/image/jiaoxiang/content@2x.png" class="card-img-top" alt="vacant spots" />
+            <div class="card-body">
+                <div class="card-title">
+                    <h4 class="text-center">浏览信息娱乐化</h4>
+                </div>
+                <div class="card-text">
+                    <p>
+                        <ul>
+                            <li>短视频、时事热点、新闻八卦等</li>
+                            <li>碎片化的知识，多在知乎或微信公众号上</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <img src="/assets/image/jiaoxiang/drive@2x.png" class="card-img-top" alt="vacant spots" />
+            <div class="card-body">
+                <div class="card-title">
+                    <h4 class="text-center">使用手机的动机</h4>
+                </div>
+                <div class="card-text">
+                    <ul>
+                        <li>感到无聊或从手头在做的事情上分心时</li>
+                        <li>完成周期重复性动作，如游戏中的每日任务</li>
+                        <li>受竞争心态或好奇心驱使</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h6>产品对比 01</h6>
+<h2>Medium</h2>
+<div class="divide"></div>
+<div class="row">
+    <div class="col-sm-6 col-md-8">
+        <p>
+            Medium是一款非常流行的阅读与协作平台，社交元素在其中扮演着十分重要的角色。
+        </p>
+        <p>
+            用户可以高亮、评论和分享文章中的特定句子（如右图），也可以在阅读文章时看到被最多用户高亮的句子，和你关注的人高亮的句子。
+            在用户的个人主页有他发表的文章、高亮过的句子等信息，构成写作与阅读一体的社区。
+        </p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+        <img src="/assets/image/jiaoxiang/Medium-2.png" class="card-img-top" alt="medium screenshot">
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+
+<h2>功能构思</h2>
+<div class="divide"></div>
+<div class="row">
+    <div class="col-md-6">
+        <img src="/assets/image/jiaoxiang/sketch-1.png" class="img-fluid" alt="sketch" />
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+        <p>
+            针对博客、微信公众号、知乎日报等短文章，能够让用户<strong>快速获取到文章重点内容以及增加趣味性</strong>是留下用户的关键。
+            所以对于提升阅读乐趣以及快速获取文章重点做出以下两方面设计：
+        </p>
+        <div class="divide"></div>
+        <h4>1. 云笔记与想法 - 社交化</h4>
+        <p>
+            用户可以在文章内高亮文段，并针对文段发表想法，创造一个与其他人共度文章的氛围。
+            新读者在阅读时既可以看到他人高亮的文章重点，又可以参与讨论，增加互动性。
+        </p>
+        <div class="divide"></div>
+        <h4>2. 阅读积分 - 游戏化</h4>
+        <p>
+            通过阅读获得积分的方式具象化用户的阅读行为，提供可见的反馈。文章根据内容分类，如科技、生物、音乐等。
+            用户通过阅读等方式获得相应类别的积分，并作为个人属性显示在个人页面。
+            阅读积分可通过以下两种方式获取：
+            <ol>
+                <li>阅读文章</li>
+                <li>高亮文段、参与讨论</li>
+                <li>回答文章内的相关简单问题，如关于主旨的选择题等</li>
+            </ol>
+        </p>
+    </div>
+</div>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+
+<h2>技术实现</h2>
+<div class="divide"></div>
+<p>
+    本项目实现基于前端技术PWA（渐进式网络应用），可以和原生应用类似被保存在手机桌面。
+    框架采用<a href="https://github.com/lavas-project/lavas" target="_blank">Lavas</a>，
+    一个基于<a href="https://vuejs.org/index.html" target="_blank">Vue.js</a>的PWA解决方案。
+</p>
+<p>
+    由于时间问题，本项目目前只实现了部分功能。
+</p>
+
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+<div class="divide"></div>
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-5">
+        <h6>功能实现 01</h6>
+        <h2>云笔记</h2>
+        <div class="divide"></div>
+        <p>
+            在文章页面中，绿色句子为其他用户标注过的句子，用户点击后弹出点赞、评论等操作。用户点击任意句子后句子变为蓝色背景，显示被用户高亮。
+        </p>
+        <p>
+            当读过文章的人愈来越多，重要的文段被标注出来后会让新阅读的用户更加快速抓住文章重点。
+        </p>
+    </div>
+    <div class="col-1"></div>
+    <div class="col-md-4">
+        <img src="/assets/image/jiaoxiang/highlight.png" class="card-img-top" alt="Highlight">
+    </div>
+    <div class="col-1"></div>
+</div>
+<div class="divide"></div>
+<div class="divide"></div>
+

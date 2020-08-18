@@ -48,6 +48,10 @@ body {
     font-size: 1.25rem;
     line-height: 2.25rem; 
 }
+span.h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+}
 
 
 // Progress bar
@@ -162,3 +166,8 @@ img.avatar {
 //     width: 100%;
 //     transform: translateZ(-2px) scale(3);
 // }
+
+
+.grey-bg {
+    background-color: #f8f8f8;
+}
