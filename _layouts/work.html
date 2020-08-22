@@ -1,68 +1,118 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-<nav class="navbar navbar-expand">
-    <a class="nav-link" href="javascript: history.back()">Pengkai Liao</a>
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="{% link about.html %}">About</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
-        </li>
-    </ul>
-</nav>
+  {%- include head.html -%}
 
-<article>
+  <body>
 
-    <header>
+    {%- include header.html -%}
 
-        <div class="divide"></div>
-        <div class="divide"></div>
-        <div class="divide"></div>
-        <div class="divide"></div>
-        <div class="divide"></div>
-        <div class="divide"></div>
+    <!-- <div class="py-5"> -->
+      <div class="work-container">
 
-        <div class="row">
-            <div class="col-md-8 col-sm-12 d-flex">
-                <div class="align-self-end">
-                    <h1>{{ page.title | escape }}</h1>
-                    <p>{{ page.desc | escape }}</p>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-                <strong>Method</strong>
-                <p> {{ page.method }}</p>
-                <strong>Tools</strong>
-                <p> {{ page.tools }}</p>
-                <strong>Duration</strong>
-                <p> {{ page.duration }}</p>
-                <strong>Team</strong>
-                <p> {{ page.team }}</p>
-            </div>
+        <div class="container">
+
+            <nav class="navbar navbar-expand sticky-top">
+                <a class="nav-link" href="javascript: history.back()">Home</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% link about.html %}">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% link /assets/PengkaiLiao_Resume.pdf %}" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
 
-        <div class="divide"></div>
-        <div class="divide"></div>
-        <div class="divide"></div>
-        <div class="divide"></div>
+        <article>
 
-        <!-- <div class="fixed-cover">
-            <img src="{{ page.cover }}" class="img-fluid fixed-cover-img" alt="Responsive image" />
-        </div> -->
-        <!-- <img src="{{ page.cover }}" class="img-fluid fixed-cover-img" alt="Responsive image" /> -->
-        <hr class="my-4" />
+            <header>
 
-    </header>
+                <div class="row h-100 m-0 p-0">
+                    <div class="col-md-6 col-sm-12" style="background-image: url('{{ page.cover }}'); background-size: cover; background-position: center center;">
+                    <!-- <div class="col-md-6 col-sm-12 p-0 h-100 overflow-hidden"> -->
+                        <!-- <img src="{{ page.cover }}" class="cover-img" alt="cover" /> -->
+                    </div>
+                    <div class="col-md-6 col-sm-12 h-100 w-auto p-5 d-flex flex-column justify-content-between">
+                        <div></div>
+                        <div class="w-100">
+                            <h1>{{ page.title | escape }}</h1>
+                            <p>{{ page.desc | escape }}</p>
+                        </div>
 
-    <div class="divide"></div>
-    <div class="divide"></div>
-    <div class="divide"></div>
+                        <div class="row w-100 p-0 mb-5">
+                            <div class="col-md-3 col-sm-6">
+                                <span class="gray font-weight-bolder">Role</span><br/>
+                                {{ page.method }}
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <span class="gray font-weight-bolder">Tools</span><br/>
+                                {{ page.tools }}
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <span class="gray font-weight-bolder">Duration</span><br/>
+                                {{ page.duration }}
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <span class="gray font-weight-bolder">Team</span><br/>
+                                {{ page.team }}
+                            </div>
+                        </div>
 
-    <section>
-        {{ content }}
-    </section>
+                    </div>
+                </div>
 
-</article>
+                <!-- Original arrangement -->
+
+                    <!-- <div class="divide"></div>
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+
+                    <div class="row">
+                        <div class="col-md-8 col-sm-12 d-flex">
+                            <div class="align-self-end">
+                                <h1>{{ page.title | escape }}</h1>
+                                <p>{{ page.desc | escape }}</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <strong>Role</strong>
+                            <p> {{ page.method }}</p>
+                            <strong>Tools</strong>
+                            <p> {{ page.tools }}</p>
+                            <strong>Duration</strong>
+                            <p> {{ page.duration }}</p>
+                            <strong>Team</strong>
+                            <p> {{ page.team }}</p>
+                        </div>
+                    </div>
+
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+                    <div class="divide"></div>
+
+                    <hr class="my-4" /> -->
+
+            </header>
+
+            <div class="vh-100"></div>
+
+            {{ content }}
+
+        </article>
+
+
+      </div>
+    <!-- </div> -->
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

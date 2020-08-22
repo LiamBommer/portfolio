@@ -4,110 +4,124 @@ permalink: /work/buzzwordreader
 title: BuzzwordReader
 cover: /assets/image/br_cover.png
 desc: A Chrome Extension for searching, sharing and defining Internet buzzwords
-method: Front-end Programming, Back-end Programming
-tools: HTML&CSS, Javascript, PHP, MySQL, Ubuntu
+method: Front-end Programming<br/>Back-end Programming
+tools: HTML&CSS<br/>Javascript<br/>PHP<br/>MySQL<br/>Ubuntu
 duration: 2017.8 - 2018.3
-team: Pengkai Liao, Jiayu Xu
+team: Pengkai Liao<br/>Jiayu Xu
 ---
+<section>
+    <div class="container">
 
-<h2>What is BuzzwordReader</h2>
-<div class="row">
-    <div class="col">
+        <h2>What is BuzzwordReader</h2>
+        <div class="row">
+            <div class="col">
+                <p>
+                    Many buzzwords emerged in China every year on the Internet and buzzwords have become a part of daily communication among young people. 
+                    BuzzwordReader is a Chrome Extension for searching, sharing, and defining Internet buzzwords. It aims to help users quickly understand popular buzzwords when browsing the Internet.
+                </p>
+                <p>
+                    <a href="https://github.com/LiamBommer/BuzzwordReader" target="_blank">Check me on Github</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <h2>How It Works</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <p>
+                    All interpretations of buzzwords come from users. First, similar to Wikipedia, users create an entry for each buzzword and then add an interpretation to it with a reliable source. Then, this entry would be able to found by other users.
+                </p>
+                <p>
+                    But, how to ensure the quality and correctness of the interpretations of each entry? We introduced a rating mechanism. You can click the up arrow button if you think the interpretation is helpful. Otherwise, click the down arrow. Eventually, the interpretation with most agree appears on the top of an entry.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <img src="/assets/image/buzzwordreader/1-content-swipe.gif" class="card-img-top shadow" alt="swipe">
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <h3>Search</h3>
+            <p>
+                You can simply highlight a word on any webpage and click the green button beside to search for related entries. A popup window with all related entries will show up.
+            </p>
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <figure class="figure">
+                    <img src="/assets/image/buzzwordreader/13-options-search.gif" class="card-img-top shadow" alt="search">
+                    <figcaption class="figure-caption text-center">Search for buzzwords in options</figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-12 col-md-5">
+                <figure class="figure">
+                    <img src="/assets/image/buzzwordreader/6-popup-search.gif" class="card-img-top shadow" alt="popup search">
+                    <figcaption class="figure-caption text-center">Search for buzzwords in popup</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        <div class="divide"></div>
+
+        <h3>Intepretation</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <p>
+                    In an entry, if you there is no interpretation yet, or existed interpretations are not correct, you can create one and add it into the entry.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <figure class="figure">
+                    <img src="/assets/image/buzzwordreader/8-popup-add-interpretation.gif" class="card-img-top shadow" alt="interpretation">
+                    <!-- <figcaption class="figure-caption text-center">Add an interpretation</figcaption> -->
+                </figure>
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        <div class="divide"></div>
+
+        <h3>Register</h3>
+        <div class="row">
+            <div class="col-sm-12 col-md-4">
+                <p>
+                    Before you can add an interpretation or vote for any existed interpretation, you need to create an account. In the setting page, you can create an account.
+                </p>
+            </div>
+            <div class="col-sm-12 col-md-8">
+                <figure class="figure">
+                    <img src="/assets/image/buzzwordreader/9-options-register.gif" class="card-img-top shadow" alt="register">
+                </figure>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+
+        <h2>Technical Realization</h2>
         <p>
-            Many buzzwords emerged in China every year on the Internet and buzzwords have become a part of daily communication among young people. 
-            BuzzwordReader is a Chrome Extension for searching, sharing, and defining Internet buzzwords. It aims to help users quickly understand popular buzzwords when browsing the Internet.
+            First, according to software engineering courses, we determined a <strong>software requirements document</strong> and drew a <strong>use case diagram</strong>. These document and diagram helped clarify the direction and procedures when we started to code.
         </p>
         <p>
-            <a href="https://github.com/LiamBommer/BuzzwordReader" target="_blank">Check me on Github</a>
-        </p>
-    </div>
-</div>
-
-<div class="divide"></div>
-<div class="divide"></div>
-
-<h2>How It Works</h2>
-<div class="row">
-    <div class="col-sm-12 col-md-4">
-        <p>
-            All interpretations of buzzwords come from users. First, similar to Wikipedia, users create an entry for each buzzword and then add an interpretation to it with a reliable source. Then, this entry would be able to found by other users.
+        Then, I started with building a server with Ubuntu, Apache, MySQL, and PHP. 
         </p>
         <p>
-            But, how to ensure the quality and correctness of the interpretations of each entry? We introduced a rating mechanism. You can click the up arrow button if you think the interpretation is helpful. Otherwise, click the down arrow. Eventually, the interpretation with most agree appears on the top of an entry.
+            For back-end programming, I chose the PHP framework: <strong>CodeIgniter</strong>, a light-weight but powerful toolkit. Since the extension eventually will be packed up, data interaction between front-end and back-end relies on the interfaces. As for front-end programming, we used jQuery and <strong>Vue.js</strong> for javascript framework
         </p>
-    </div>
-    <div class="col-sm-12 col-md-8">
-        <img src="/assets/image/buzzwordreader/1-content-swipe.gif" class="card-img-top" alt="swipe">
-    </div>
-</div>
 
-<div class="divide"></div>
-<div class="divide"></div>
-
-<h3>Search</h3>
-    <p>
-        You can simply highlight a word on any webpage and click the green button beside to search for related entries. A popup window with all related entries will show up.
-    </p>
-<div class="row">
-    <div class="col-sm-12 col-md-7">
-        <figure class="figure">
-            <img src="/assets/image/buzzwordreader/13-options-search.gif" class="card-img-top" alt="search">
-            <figcaption class="figure-caption text-center">Search for buzzwords in options</figcaption>
-        </figure>
     </div>
-    <div class="col-sm-12 col-md-5">
-        <figure class="figure">
-            <img src="/assets/image/buzzwordreader/6-popup-search.gif" class="card-img-top" alt="popup search">
-            <figcaption class="figure-caption text-center">Search for buzzwords in popup</figcaption>
-        </figure>
-    </div>
-</div>
-
-<div class="divide"></div>
-<div class="divide"></div>
-
-<h3>Intepretation</h3>
-<div class="row">
-    <div class="col-sm-12 col-md-4">
-        <p>
-            In an entry, if you there is no interpretation yet, or existed interpretations are not correct, you can create one and add it into the entry.
-        </p>
-    </div>
-    <div class="col-sm-12 col-md-8">
-        <figure class="figure">
-            <img src="/assets/image/buzzwordreader/8-popup-add-interpretation.gif" class="card-img-top" alt="interpretation">
-            <!-- <figcaption class="figure-caption text-center">Add an interpretation</figcaption> -->
-        </figure>
-    </div>
-</div>
-
-<div class="divide"></div>
-<div class="divide"></div>
-
-<h3>Register</h3>
-<div class="row">
-    <div class="col-sm-12 col-md-4">
-        <p>
-            Before you can add an interpretation or vote for any existed interpretation, you need to create an account. In the setting page, you can create an account.
-        </p>
-    </div>
-    <div class="col-sm-12 col-md-8">
-        <figure class="figure">
-            <img src="/assets/image/buzzwordreader/9-options-register.gif" class="card-img-top" alt="register">
-        </figure>
-    </div>
-</div>
-
-<div class="divide"></div>
-<div class="divide"></div>
-
-<h2>Technical Realization</h2>
-<p>
-    First, according to software engineering courses, we determined a <strong>software requirements document</strong> and drew a <strong>use case diagram</strong>. These document and diagram helped clarify the direction and procedures when we started to code.
-</p>
-<p>
-Then, I started with building a server with Ubuntu, Apache, MySQL, and PHP. 
-</p>
-<p>
-    For back-end programming, I chose the PHP framework: <strong>CodeIgniter</strong>, a light-weight but powerful toolkit. Since the extension eventually will be packed up, data interaction between front-end and back-end relies on the interfaces. As for front-end programming, we used jQuery and <strong>Vue.js</strong> for javascript framework
-</p>
+</section>

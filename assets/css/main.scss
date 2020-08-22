@@ -12,7 +12,8 @@
 /* Global variables
 /* ******************/
 $spacer: 64px;
-$bg-grey: grey;
+$bg-grey: #fbfbfb;
+// $bg-grey: rgba(241,244,246,1.0);
 
 
 // Adapt page width
@@ -21,7 +22,49 @@ $bg-grey: grey;
 @media (min-width: 996px) { .container {max-width: 960px;} }
 @media (min-width: 1200px) { .container {max-width: 1180px;} }
 
-// Color of 'a' tag
+
+/* *******************
+/* Project Page
+/* ******************/
+
+h1 {
+    font-size: 4.5rem;
+}
+
+span.gray {
+    color: $gray-500;
+}
+
+.work-container {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    padding: 128px 0px;
+}
+
+.grey {
+    background-color: $bg-grey;
+}
+
+header {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.cover-img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: -50%;
+}
 
 /* *******************
 /* Index.html
@@ -76,7 +119,8 @@ a {
 }
 
 a:hover {
-    color: $primary;
+    // color: $primary;
+    color: $gray-500;
     text-decoration: underline;
 }
 
