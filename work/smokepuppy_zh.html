@@ -3,41 +3,66 @@ layout: work
 css: smokepuppy
 permalink: /work/smokepuppy_zh
 title: Smoke Puppy
-cover: https://i.loli.net/2020/08/23/wHIlJiG8M52Px94.png
-desc: 一个能够展示实时烟雾含量的可交互原型
-method: Prototyping, User Study
-tools: Figma, ProtoPie
-duration: 2020.3 - 2020.4
-team: Chirag, Pengkai, Wentao, Madhura
+cover: https://i.loli.net/2020/08/23/WbDyR587jEFnkzQ.png
+desc: 针对在国外做饭容易触发烟雾报警器的情况，我们探索了一种通过手机端可交互原型展示实时烟雾含量与对应建议的方法来帮助用户避免触发烟雾报警器，并且通过用户测试验证了这种方法的有效性
+method: 原型制作<br/>用户测试
+tools: Figma<br/>ProtoPie
+duration: 2020.3 - 4
+team: Chirag<br/>Pengkai<br/>Wentao<br/>Madhura
 ---
 <section>
     <div class="container">
 
         <h2>经常被触发的烟雾报警器</h2>
         <div class="divide"></div>
-        <p>
-            在美国，几乎每个房子内都装有烟雾报警器。若不小心触发烟雾报警器，除却报警器的响亮的报警声，还则很有可能导致消防车发动甚至整栋建筑的人都需撤离。
-            特别是对于下厨时会产生许多油烟的中式菜来说，更是要时常担心做饭时触发烟雾报警器。在我们一名组员的家中，甚至几乎每天都会因为过量的油烟触发烟雾报警器。
-        </p>
-        <p>
-            受启发于这种担心触发烟雾报警的困扰，我们尝试探索实时监控厨房中烟雾含量的方法，这样就能让经常做饭的人在在烟雾含量达到临界前采取如开窗通风、关小煤气灶等措施，
-            以最大程度避免触发报警器。
-        </p>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <p>
+                    在美国，几乎每个房子内都装有烟雾报警器。若不小心触发烟雾报警器，除却报警器的响亮的报警声，还则很有可能导致消防车发动甚至整栋建筑的人都需撤离。
+                    特别是对于下厨时会产生许多油烟的中式菜来说，更是要时常担心做饭时触发烟雾报警器。在我们一名组员的家中，甚至几乎每天都会因为过量的油烟触发烟雾报警器。
+                </p>
+                <p>
+                    受启发于这种担心触发烟雾报警的困扰，我们尝试探索实时监控厨房中烟雾含量的方法，这样就能让经常做饭的人在在烟雾含量达到临界前采取如开窗通风、关小煤气灶等措施，
+                    以最大程度避免触发报警器。
+                </p>
+            </div>
+        </div>
+
+        <div class="divide"></div>
+        <div class="divide"></div>
+        <div class="divide"></div>
+        <div class="divide"></div>
+
+        <h2>项目过程</h2>
+        <div class="divide"></div>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <p>
+                    依照这样的思路，我们首先进行了硬件的采购与设置，然后是利用Figma和PropoPie进行可交互原型的制作，最后邀请用户在真实场景下进行测试并收集反馈与得出改进方向。
+                </p>
+            </div>
+        </div>
+        <img src="https://i.loli.net/2020/08/23/C2FQ6KNHTaRfb9J.png" class="img-fluid" alt="Process" />
 
     </div>
 </section>
 
-<section>
+<section class="grey">
     <div class="container">
 
-        <h2>实时监控烟雾含量</h2>
-        <div class="divide"></div>
-        <p>
-            我们通过一个手机端的可交互原型来让用户能够在下厨时也能实时看到当前烟雾含量，并在烟雾含量过高时提供震动或声音提醒。我们邀请了3名用户进行测试，在使用Smoke Puppy实时监控烟雾含量的情况下他们均为触发烟雾报警器，并给出了正面的反馈。
-        </p>
-        <p>
-            图
-        </p>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h2>硬件设置</h2>
+                <div class="divide"></div>
+                <p>
+                    硬件设置以Raspberry Pi 4为载体，搭载了烟雾探测器、ADS1115模数转换器、面包板等设备，使得研究员可以在电脑端使用Python读取实时烟雾含量。
+                </p>
+            </div>
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-5 col-sm-12">
+                <img src="https://i.loli.net/2020/08/23/5opIEDZUOdgL4ha.png" class="img-fluid shadow" />
+            </div>
+        </div>
 
     </div>
 </section>
@@ -46,42 +71,184 @@ team: Chirag, Pengkai, Wentao, Madhura
     <div class="container">
 
         <h2>原型设计</h2>
-        <p>
-            高保真交互逻辑
-        </p>
-        <p>
-            作为一个实时监控烟雾含量的工具，我们打算给用户呈现一个简单易用且能够快速理解的界面，所以尽量把信息与操作在一屏内展示。也同时尝试了新拟物的视觉风格，让工具看起来更加真实。
-        </p>
-        <p>
-            
-        </p>
+        <div class="divide"></div>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <p>
+                    作为一个实时监控烟雾含量的工具，我们打算给用户呈现一个简单易用且能够快速理解的界面，所以尽量将信息与操作集中在一屏内展示。
+                </p>
+                <p>
+                    实时烟雾含量作为最重要的信息，以转盘的形式圆环的形式展现在屏幕上方。当烟雾含量逐渐升高时，圆环中央代表烟雾含量的百分比会升高至100%，圆环的颜色也会从青色变为黄色再到红色。
+                </p>
+            </div>
+        </div>
+        <div class="divide"></div>
+        <img src="https://i.loli.net/2020/08/23/CkapMcEJUS7fTQw.png" class="img-fluid" />
 
     </div>
 </section>
-
 
 <section>
     <div class="container">
 
-        <h2>系统设置</h2>
-        <p>
-            我们采用了一个搭载了烟雾探测器的Raspbery Pi作为探测烟雾含量的硬件，通过与Raspberry Pi与电脑的连接实现实时烟雾含量探测。
-            再通过Figma和ProtoPie制作手机上的可交互原型将实时烟雾含量展示给用户。
-        </p>
-        <p>
-            硬件图（Test Plan）、整体系统示意图、服务端与展示端
-        </p>
+        <div class="row">
+            <div class="col-md-5 col-sm-12">
+                <h3>服务端</h3>
+                <div class="divide"></div>
+                <p>
+                    为了使烟雾含量能够实时反映到用户所使用的原型上，我们采用了<a href="https://www.protopie.io/" target="_blank">ProtoPie</a>带有的数据传输功能：只要在同一wifi环境下，ProtoPie的实例间可以通过特定的message id进行数据传递。
+                </p>
+                <p>
+                    所以我们采用了Wizard of Oz的方法（就像坐在自动贩卖机里的人），给研究员打造了一个服务端，让他能够通过一个服务端界面实时更新用户所看到的烟雾含量。
+                </p>
+            </div>
+            <div class="col-md-7 col-sm-12">
+                <img src="https://i.loli.net/2020/08/24/kiFe8UQqTlcHS5Y.png" class="img-fluid" />
+            </div>
+        </div>
+
+    </div>
+</section>
+<section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-4 col-sm-12">
+                <h3>实时烟雾含量变化</h3>
+                <div class="divide"></div>
+                <p>通过研究员在服务端的控制，用户就能在他们做饭时通过手机上的原型看到当前的烟雾含量，进而决定是否需要开窗透气、关小火力等以免触发烟雾报警器。</p>
+            </div>
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-6 col-sm-12">
+                <img src="https://i.loli.net/2020/08/24/S586wIND1cVKJkA.gif" class="img-fluid" />
+            </div>
+        </div>
 
     </div>
 </section>
 
 <section>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-4 col-sm-12">
+                <h3>打开提醒开关</h3>
+                <div class="divide"></div>
+                <p>用户可以选择分别打开位于页面底部的“响铃”和“震动”按钮，以便在烟雾含量升高至80%以上时收到响铃或震动提示。</p>
+                <p>
+                    这样便不用在做饭时一直注视或留意手机上的烟雾含量变化，可以更加专注地在做饭上，并且能够在烟雾含量过高时收到提醒以防触发烟雾报警器。
+                </p>
+            </div>
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-6 col-sm-12">
+                <img src="https://i.loli.net/2020/08/24/zZeVS4wGlmsugvK.gif"  class="img-fluid" />
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="grey">
     <div class="container">
 
         <h2>用户测试</h2>
+        <div class="divide"></div>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <p>
+                    为了能够让用户在真实的下厨场景下进行测试，我们首先需要将上述硬件设置、服务端和用户端的原型设计布置在用户测试的场景中:
+                </p>
+                <p>
+                    由研究员从连接着硬件设备的电脑中查看实时变化的烟雾含量，再在服务端上不断更新当前的烟雾含量，此时用户就可以通过ProtiPie提供的网络传输功能在Smoke Puppy客户端上看到实时变化的烟雾含量。
+                </p>
+            </div>
+        </div>
+        <img src="https://i.loli.net/2020/08/24/t1D2HwoyBZejvUk.png" class="img-fluid" />
+        
+    </div>
+</section>
+<section class="grey">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h3>预测试 & 用户招募</h3>
+                <div class="divide"></div>
+                <p>
+                    首先进行预测试，分别在三种情况下测试得出测试环境的烟雾含量基准值与触发烟雾报警器的阈值：没有烟雾时、少量烟雾时、大量烟雾时。结果显示测试环境中没有烟雾的基准值为1990，触发烟雾报警器的阈值为2050。再经过程序转换得出百分比供研究院参照。
+                </p>
+                <p>
+                    我们招募了3名拥有一年以上做饭经验、且均有过触发烟雾报警器经历的研究生作为被试者。
+                </p>
+            </div>
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-5 col-sm-12">
+                <img src="https://i.loli.net/2020/08/24/jYDqTHu3gdNLRoC.png" class="img-fluid shadow" />
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="grey">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h3>测试流程</h3>
+                <div class="divide"></div>
+                <p>
+                    <ol>
+                        <li>在测试开始前先由研究员布置好硬件设备，将烟雾探测器摆放在炉灶旁，提供运行原型的手机让被试者使用，在笔记本上根据硬件读数实时更新烟雾含量</li>
+                        <li>被试者被要求煎冷冻的印度麦饼（chapatis），根据研究员以往的经验这是一种会产生大量烟雾的做法，并且很有可能触发烟雾报警器</li>
+                        <li>研究员坐在厨房观察并记录被试者的行为</li>
+                        <li>结束后，邀请被试者填写简短的试后问卷、并进行半结构化访谈询问被试者的意见感受</li>
+                    </ol>
+                </p>
+            </div>
+            <div class="col-md-1 col-sm-0"></div>
+            <div class="col-md-5 col-sm-12">
+                <img src="https://i.loli.net/2020/08/24/avP5o9Yl2IqGiSh.png" class="img-fluid shadow">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="grey">
+    <div class="container">
+
+        <h3>用户反馈</h3>
+        <div class="divide"></div>
         <p>
-            预测试、用户招募、流程、反馈
+            三名用户均表示这项设计的确很有帮助，让他们能够看到实时烟雾含量从而避免触发烟雾报警器。
         </p>
+        <div class="divide"></div>
+        <div class="divide"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>赞扬</h4>
+                <ul class="font-italic">
+                    <li>
+                        “用圆环和颜色变化来表示烟雾含量一眼就能看懂！”
+                    </li>
+                    <li>
+                        “就算是做饭过程中瞄一眼也能一下看懂”
+                    </li>
+                    <li>
+                        “用起来很简单，每个功能都一下就能明白”
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>建议</h4>
+                <ul class="font-italic">
+                    <li>"要是能在炉子上直接看到烟雾含量就好了"</li>
+                    <li>"要是能用Siri或者Alexa（亚马逊语音助手）提示就好了"</li>
+                    <li>"给用户的建议应该更加明显一些"</li>
+                </ul>
+            </div>
+        </div>
 
     </div>
 </section>
@@ -91,14 +258,18 @@ team: Chirag, Pengkai, Wentao, Madhura
 <section>
     <div class="container">
 
-        <h2>功能展望</h2>
-
-        不足
-        1. 时间不够，没能实现时间预测功能
-        2. 用户测试，A/B测试
-
-        展望
-        1. 可以和体感设备连接，如手表
+        <h2>反思与展望</h2>
+        <div class="divide"></div>
+        <div class="row">
+            <div class="col-md-7 col-sm-12">
+                <p>
+                    本次项目因中途疫情蔓延和技术限制等原因，还有部分功能如<strong>显示预测触发报警的时间</strong>未实现；能测试的场地也局限在一名组员的公寓中，未能对不同的公寓和烟雾报警器类型做适用性测试。
+                </p>
+                <p>
+                    用户的测试与反馈成功证明了我们设计的成功，通过展示实时烟雾含量来最大限度的避免用户触发烟雾报警器。但就像用户所提到的，展示方式结合<strong>物联网或可穿戴设备</strong>或许会是更好的方式，能够让用户更加集中在做饭上，花费尽量少的精力来查看烟雾含量。
+                </p>
+            </div>
+        </div>
 
     </div>
 </section>
